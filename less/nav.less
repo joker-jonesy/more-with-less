@@ -1,0 +1,28 @@
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: @navHeight;
+  background-color: white;
+  width: 100%;
+
+  .initFlex();
+  .row-center();
+
+  .pad(8px);
+
+  a{
+    color: @mainColor;
+
+    &:nth-child(odd){
+      color: green;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    height: @desktopHeight;
+  }
+
+}
+
+
